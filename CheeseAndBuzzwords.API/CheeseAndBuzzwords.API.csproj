@@ -40,6 +40,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Newtonsoft.Json.8.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
@@ -103,7 +107,16 @@
       <DependentUpon>Web.config</DependentUpon>
     </Content>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\CheeseAndBuzzwords.EventStore\CheeseAndBuzzwords.EventStore.csproj">
+      <Project>{75731732-066b-405a-921d-0f3e5859375e}</Project>
+      <Name>CheeseAndBuzzwords.EventStore</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CheeseAndBuzzwords\CheeseAndBuzzwords.csproj">
+      <Project>{853bec26-1c52-4559-b750-c24012c7ed46}</Project>
+      <Name>CheeseAndBuzzwords</Name>
+    </ProjectReference>
+  </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
   </ItemGroup>

@@ -1,6 +1,6 @@
 ﻿namespace CheeseAndBuzzwords
 {
-	public class NewCartStarted : IEvent
+	public class NewCartStarted : Event
 	{
 		public NewCartStarted(CartId cartId, PurchaseTotal openingTotal)
 		{

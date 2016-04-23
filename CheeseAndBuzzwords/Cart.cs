@@ -6,7 +6,7 @@
 
 		public Cart(CartId id)
 		{
-			_aggregate = id.BuildAggregate();
+			_aggregate = new Aggregate(id.Value, new AggregateName(GetType().Name));
 			_aggregate.Apply(new NewCartStarted(id, new PurchaseTotal(0.0m)));
 		}
 
