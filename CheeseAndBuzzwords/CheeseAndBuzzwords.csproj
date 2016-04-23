@@ -42,14 +42,13 @@
   <ItemGroup>
     <Compile Include="Aggregate.cs" />
     <Compile Include="AggregateName.cs" />
-    <Compile Include="Cart.cs" />
-    <Compile Include="CartId.cs" />
+    <Compile Include="Carts\Cart.cs" />
+    <Compile Include="Carts\CartId.cs" />
     <Compile Include="Event.cs" />
-    <Compile Include="IEvent.cs" />
     <Compile Include="IEventStream.cs" />
-    <Compile Include="NewCartStarted.cs" />
+    <Compile Include="Carts\NewCartStarted.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="PurchaseTotal.cs" />
+    <Compile Include="Carts\PurchaseTotal.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

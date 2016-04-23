@@ -1,4 +1,4 @@
-﻿namespace CheeseAndBuzzwords
+﻿namespace CheeseAndBuzzwords.Carts
 {
 	public class Cart
 	{

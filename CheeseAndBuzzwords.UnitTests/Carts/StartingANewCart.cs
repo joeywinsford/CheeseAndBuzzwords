@@ -1,8 +1,9 @@
 ﻿using System;
 using System.Linq;
+using CheeseAndBuzzwords.Carts;
 using Xunit;
 
-namespace CheeseAndBuzzwords.UnitTests
+namespace CheeseAndBuzzwords.UnitTests.Carts
 {
 	public class StartingANewCart
 	{

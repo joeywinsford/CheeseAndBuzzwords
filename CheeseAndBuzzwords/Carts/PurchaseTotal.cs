@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace CheeseAndBuzzwords
+namespace CheeseAndBuzzwords.Carts
 {
 	public class PurchaseTotal : IEquatable<PurchaseTotal>
 	{
