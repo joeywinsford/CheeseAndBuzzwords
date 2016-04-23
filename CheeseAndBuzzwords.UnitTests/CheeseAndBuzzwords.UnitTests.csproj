@@ -56,7 +56,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FakeEventStream.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StartingANewCart.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
