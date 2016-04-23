@@ -15,5 +15,10 @@ namespace CheeseAndBuzzwords
 		{
 			return _id.Equals(other._id);
 		}
+
+		public Aggregate BuildAggregate()
+		{
+			return new Aggregate(_id);
+		}
 	}
 }

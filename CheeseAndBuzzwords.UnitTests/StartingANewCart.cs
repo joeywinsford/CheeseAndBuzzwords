@@ -17,7 +17,7 @@ namespace CheeseAndBuzzwords.UnitTests
 			var eventStream = new FakeEventStream();
 			cart.Publish(eventStream);
 
-			_newCartEvent = (NewCartStarted)eventStream.PublishedEvents.Single();
+			_newCartEvent = (NewCartStarted)eventStream.PublishedEvents(_newCartId).Single();
 		}
 
 		[Fact]

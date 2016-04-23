@@ -1,24 +1,18 @@
-﻿using System.Collections.Generic;
-
-namespace CheeseAndBuzzwords
+﻿namespace CheeseAndBuzzwords
 {
 	public class Cart
 	{
-		private readonly List<IEvent> _events = new List<IEvent>();
+		private readonly Aggregate _aggregate;
 
 		public Cart(CartId id)
 		{
-			Apply(new NewCartStarted(id, new PurchaseTotal(0.0m)));
-		}
-
-		private void Apply(IEvent @event)
-		{
-			_events.Add(@event);
+			_aggregate = id.BuildAggregate();
+			_aggregate.Apply(new NewCartStarted(id, new PurchaseTotal(0.0m)));
 		}
 
 		public void Publish(IEventStream eventStream)
 		{
-			eventStream.Publish(_events);
+			_aggregate.Publish(eventStream);
 		}
 	}
 }

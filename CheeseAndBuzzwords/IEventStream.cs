@@ -4,6 +4,6 @@ namespace CheeseAndBuzzwords
 {
 	public interface IEventStream
 	{
-		void Publish(IEnumerable<IEvent> events);
+		void Publish(Aggregate aggregate, IEnumerable<IEvent> events);
 	}
 }

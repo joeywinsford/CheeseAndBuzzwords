@@ -40,6 +40,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Aggregate.cs" />
     <Compile Include="Cart.cs" />
     <Compile Include="CartId.cs" />
     <Compile Include="IEvent.cs" />
